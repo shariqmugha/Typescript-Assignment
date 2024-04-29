@@ -1,5 +1,11 @@
 let magician: string[] = ['Harry potter','Hermione Granger','Ron Wesly','Albus Dumbledore'];
 
+function make_great (magicianArry:string[]){
+    for(let i=0; i<magicianArry.length; i++){
+    magician[i] = 'the Great ' + magicianArry[i]
+    }
+}
+
 function show_magicians(magicians: string[]){
 
     magicians.forEach(element => {
@@ -7,5 +13,5 @@ function show_magicians(magicians: string[]){
     });
 }
 
-
-show_magicians(magician)
+make_great(magician);
+show_magicians(magician);
